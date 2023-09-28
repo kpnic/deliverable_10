@@ -218,8 +218,8 @@ first div in the grid  and place it in the grid. */
 
   @media screen and (min-width: 800px){
 
-    nav a{
-      text-align: left;
+    nav {
+      text-align: right;
       padding-top: 30px;
       padding-bottom: 30px;
     }
@@ -228,12 +228,14 @@ first div in the grid  and place it in the grid. */
       grid-template-columns: 50px auto 500px auto 50px;
     }
   
-    .about .clients .method-image .contact-image{
-      grid-column: 3/span 2;
+    .about, .clients, .method-image, .contact-image{
+      grid-column-start: 3;
+      grid-column-end: 5;
     }
   
-    .method .contact .about-image .clients-image{
-      grid-column: 2/span 2;
+    .method, .contact, .about-image, .clients-image{
+      grid-column-start: 2;
+      grid-column-end: 4;
     }
   
   
